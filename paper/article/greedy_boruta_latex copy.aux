@@ -1,0 +1,184 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{tibshirani1996lasso}
+\citation{guyon2002rfe}
+\citation{peng2005mrmr}
+\citation{kursa2010feature}
+\citation{borutapy}
+\citation{borutashap}
+\@writefile{toc}{\contentsline {title}{Greedy Boruta: Guaranteed Convergence and Massive Speedups\unskip \ \ignorespaces for All-Relevant Feature Selection}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\authcount {2}}
+\@writefile{toc}{\contentsline {author}{Nicolas Vana \and Estevão Prado}{1}{chapter.1}\protected@file@percent }
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{yellow!40}{\textcolor {yellow!40}{o}}\ WRITE: Write a compelling abstract covering:}{1}{section*.2}\protected@file@percent }
+\pgfsyspdfmark {pgfid1}{20223213}{34586651}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:introduction}{{1}{1}{Introduction}{section.1}{}}
+\newlabel{sec:introduction@cref}{{[section][1][]1}{[1][1][]1}{}{}{}}
+\citation{kursa2010feature}
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{2}{section*.3}\protected@file@percent }
+\citation{kursa2010feature}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background: The Boruta Algorithm}{3}{section.2}\protected@file@percent }
+\newlabel{sec:background}{{2}{3}{Background: The Boruta Algorithm}{section.2}{}}
+\newlabel{sec:background@cref}{{[section][2][]2}{[1][3][]3}{}{}{}}
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{green!20}{\textcolor {green!20}{o}}\ FIGURE: Consider: Vanilla Boruta flowchart showing the iterative process}{4}{section*.4}\protected@file@percent }
+\pgfsyspdfmark {pgfid2}{20223214}{28929700}
+\@writefile{toc}{\contentsline {section}{\numberline {3}The Greedy Boruta Algorithm}{4}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{4}{The Greedy Boruta Algorithm}{section.3}{}}
+\newlabel{sec:method@cref}{{[section][3][]3}{[1][4][]4}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Core Modification}{4}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:method:modification}{{3.1}{4}{Core Modification}{subsection.3.1}{}}
+\newlabel{sec:method:modification@cref}{{[subsection][1][3]3.1}{[1][4][]4}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Maintained Recall.}{5}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Guaranteed Convergence.}{5}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Faster Convergence.}{5}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Hyperparameter Simplification.}{5}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Parallelization.}{5}{section*.9}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Greedy Boruta Algorithm}}{6}{algorithm.1}\protected@file@percent }
+\newlabel{alg:greedy_boruta}{{1}{6}{Parallelization}{algorithm.1}{}}
+\newlabel{alg:greedy_boruta@cref}{{[algorithm][1][]1}{[1][5][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Theoretical Properties}{6}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:method:theory}{{3.2}{6}{Theoretical Properties}{subsection.3.2}{}}
+\newlabel{sec:method:theory@cref}{{[subsection][2][3]3.2}{[1][5][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Recall Guarantee}{6}{theorem.1.1}\protected@file@percent }
+\newlabel{thm:recall}{{1}{6}{Recall Guarantee}{theorem.1.1}{}}
+\newlabel{thm:recall@cref}{{[theorem][1][1]1}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Convergence Guarantee}{6}{theorem.1.2}\protected@file@percent }
+\newlabel{thm:convergence}{{2}{6}{Convergence Guarantee}{theorem.1.2}{}}
+\newlabel{thm:convergence@cref}{{[theorem][2][1]2}{[1][6][]6}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Practical Implications.}{7}{section*.12}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Number of iterations $K = \lceil \log _2(p/\alpha ) \rceil $ required for convergence with Bonferroni correction.}}{7}{table.1}\protected@file@percent }
+\newlabel{tab:iterations_alpha}{{1}{7}{Number of iterations $K = \lceil \log _2(p/\alpha ) \rceil $ required for convergence with Bonferroni correction}{table.1}{}}
+\newlabel{tab:iterations_alpha@cref}{{[table][1][]1}{[1][7][]7}{}{}{}}
+\newlabel{cor:hyperparams}{{1}{7}{Practical Implications}{corollary.1.1}{}}
+\newlabel{cor:hyperparams@cref}{{[corollary][1][1]1}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Triviality of FDR Correction in Greedy Boruta}{7}{theorem.1.3}\protected@file@percent }
+\newlabel{thm:fdr_trivial}{{3}{7}{Triviality of FDR Correction in Greedy Boruta}{theorem.1.3}{}}
+\newlabel{thm:fdr_trivial@cref}{{[theorem][3][1]3}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Parallelizability}{8}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:method:parallel}{{3.3}{8}{Parallelizability}{subsection.3.3}{}}
+\newlabel{sec:method:parallel@cref}{{[subsection][3][3]3.3}{[1][7][]8}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Multiple Testing Corrections}{9}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:method:corrections}{{3.4}{9}{Multiple Testing Corrections}{subsection.3.4}{}}
+\newlabel{sec:method:corrections@cref}{{[subsection][4][3]3.4}{[1][9][]9}{}{}{}}
+\citation{strobl2007bias}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}False Positive Rate Analysis}{10}{subsection.3.5}\protected@file@percent }
+\newlabel{sec:method:fpr}{{3.5}{10}{False Positive Rate Analysis}{subsection.3.5}{}}
+\newlabel{sec:method:fpr@cref}{{[subsection][5][3]3.5}{[1][10][]10}{}{}{}}
+\newlabel{asm:exchangeability}{{3.5}{10}{False Positive Rate Analysis}{subsection.3.5}{}}
+\newlabel{asm:exchangeability@cref}{{[subsection][5][3]3.5}{[1][10][]10}{}{}{}}
+\newlabel{thm:fpr}{{4}{10}{False Positive Rate Analysis}{theorem.1.4}{}}
+\newlabel{thm:fpr@cref}{{[theorem][4][1]4}{[1][10][]10}{}{}{}}
+\newlabel{eq:fpr_exact}{{1}{10}{False Positive Rate Analysis}{equation.1}{}}
+\newlabel{eq:fpr_exact@cref}{{[equation][1][]1}{[1][10][]10}{}{}{}}
+\newlabel{eq:fpr_bound}{{2}{10}{False Positive Rate Analysis}{equation.2}{}}
+\newlabel{eq:fpr_bound@cref}{{[equation][2][]2}{[1][10][]10}{}{}{}}
+\citation{kursa2010feature}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Upper bound on per-feature false positive rate of Greedy Boruta under Bonferroni correction ($K = \lceil \log _2(p/\alpha ) \rceil $). Each cell shows $K$ (FPR bound).}}{11}{table.2}\protected@file@percent }
+\newlabel{tab:fpr}{{2}{11}{Upper bound on per-feature false positive rate of Greedy Boruta under Bonferroni correction ($K = \lceil \log _2(p/\alpha ) \rceil $). Each cell shows $K$ (FPR bound)}{table.2}{}}
+\newlabel{tab:fpr@cref}{{[table][2][]2}{[1][10][]11}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Evaluation}{11}{section.4}\protected@file@percent }
+\newlabel{sec:experiments}{{4}{11}{Experimental Evaluation}{section.4}{}}
+\newlabel{sec:experiments@cref}{{[section][4][]4}{[1][10][]11}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Synthetic Experimental Setup}{11}{subsection.4.1}\protected@file@percent }
+\newlabel{sec:experiments:setup}{{4.1}{11}{Synthetic Experimental Setup}{subsection.4.1}{}}
+\newlabel{sec:experiments:setup@cref}{{[subsection][1][4]4.1}{[1][11][]11}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Handling of tentative features.}{12}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Parallelism and speedup decomposition.}{12}{section*.15}\protected@file@percent }
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{blue!20}{\textcolor {blue!20}{o}}\ CITE: Cite UCI repository / OpenML for datasets}{12}{section*.16}\protected@file@percent }
+\pgfsyspdfmark {pgfid3}{20223214}{27693622}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Synthetic Dataset Experiments}{12}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:experiments:synthetic}{{4.2}{12}{Synthetic Dataset Experiments}{subsection.4.2}{}}
+\newlabel{sec:experiments:synthetic@cref}{{[subsection][2][4]4.2}{[1][12][]12}{}{}{}}
+\newlabel{sec:experiments:alpha}{{4.2}{12}{Final-State Selection Quality}{section*.17}{}}
+\newlabel{sec:experiments:alpha@cref}{{[subsection][2][4]4.2}{[1][12][]12}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Final-State Selection Quality}{12}{section*.17}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Final-state ground-truth metrics across significance levels ($\alpha $) for Vanilla Boruta and Greedy Boruta on the synthetic dataset. Individual runs are shown as semi-transparent dots; markers with caps show mean $\pm $ SE.}}{13}{figure.1}\protected@file@percent }
+\newlabel{fig:final_state_metrics}{{1}{13}{Final-state ground-truth metrics across significance levels ($\alpha $) for Vanilla Boruta and Greedy Boruta on the synthetic dataset. Individual runs are shown as semi-transparent dots; markers with caps show mean $\pm $ SE}{figure.1}{}}
+\newlabel{fig:final_state_metrics@cref}{{[figure][1][]1}{[1][12][]13}{}{}{}}
+\newlabel{sec:experiments:convergence}{{4.2}{14}{Convergence and Early-Stopping Risk}{section*.18}{}}
+\newlabel{sec:experiments:convergence@cref}{{[subsection][2][4]4.2}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Convergence and Early-Stopping Risk}{14}{section*.18}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Per-run convergence trajectories for $\alpha =0.01$ vs.\ iteration for all four GT metrics. Each grey line is one seed; the horizontal dashed line represents the Greedy Boruta mean value; The vertical dotted line marks the Greedy Boruta iteration count ($K = 16$).}}{15}{figure.2}\protected@file@percent }
+\newlabel{fig:convergence_single_time}{{2}{15}{Per-run convergence trajectories for $\alpha =0.01$ vs.\ iteration for all four GT metrics. Each grey line is one seed; the horizontal dashed line represents the Greedy Boruta mean value; The vertical dotted line marks the Greedy Boruta iteration count ($K = 16$)}{figure.2}{}}
+\newlabel{fig:convergence_single_time@cref}{{[figure][2][]2}{[1][14][]15}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Undecidedness factor (left) and Potential miss rate (right) for Vanilla Boruta at $\alpha =0.01$ as a function of iteration number. The vertical dotted line marks the Greedy Boruta iteration count ($K = 16$).}}{15}{figure.3}\protected@file@percent }
+\newlabel{fig:undecidedness_single}{{3}{15}{Undecidedness factor (left) and Potential miss rate (right) for Vanilla Boruta at $\alpha =0.01$ as a function of iteration number. The vertical dotted line marks the Greedy Boruta iteration count ($K = 16$)}{figure.3}{}}
+\newlabel{fig:undecidedness_single@cref}{{[figure][3][]3}{[1][15][]15}{}{}{}}
+\citation{ke2017lightgbm}
+\citation{guyon2004result}
+\citation{guyon2004result}
+\citation{guyon2004result}
+\citation{guyon2004result}
+\citation{uci2017}
+\citation{buhlmann2014hdi}
+\newlabel{sec:experiments:speedup}{{4.2}{16}{Runtime Speedup}{section*.19}{}}
+\newlabel{sec:experiments:speedup@cref}{{[subsection][2][4]4.2}{[1][16][]16}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Runtime Speedup}{16}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Real-World Benchmarks}{16}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:experiments:realworld}{{4.3}{16}{Real-World Benchmarks}{subsection.4.3}{}}
+\newlabel{sec:experiments:realworld@cref}{{[subsection][3][4]4.3}{[1][16][]16}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Real-world benchmark datasets.}}{17}{table.3}\protected@file@percent }
+\newlabel{tab:realworld_datasets}{{3}{17}{Real-world benchmark datasets}{table.3}{}}
+\newlabel{tab:realworld_datasets@cref}{{[table][3][]3}{[1][16][]17}{}{}{}}
+\newlabel{sec:experiments:realworld:performance}{{4.3}{17}{Downstream Performance}{section*.20}{}}
+\newlabel{sec:experiments:realworld:performance@cref}{{[subsection][3][4]4.3}{[1][17][]17}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Downstream Performance}{17}{section*.20}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Real-world benchmark results (mean $\pm $ SE over $R=10$ seeds). \emph  {Score} is test-set F1 (classification) or $R^2$ (regression). \emph  {Sig.}:\ directional one-sided Welch $t$-test at level $0.01$; $\blacktriangleright $~= Vanilla significantly better, $\blacktriangleleft $~= Greedy significantly better, $\approx $~= no significant difference. \emph  {Speedup} = Vanilla time\,/\,Greedy time.}}{18}{table.4}\protected@file@percent }
+\newlabel{tab:realworld_results}{{4}{18}{Real-world benchmark results (mean $\pm $ SE over $R=10$ seeds). \emph {Score} is test-set F1 (classification) or $R^2$ (regression). \emph {Sig.}:\ directional one-sided Welch $t$-test at level $0.01$; $\blacktriangleright $~= Vanilla significantly better, $\blacktriangleleft $~= Greedy significantly better, $\approx $~= no significant difference. \emph {Speedup} = Vanilla time\,/\,Greedy time}{table.4}{}}
+\newlabel{tab:realworld_results@cref}{{[table][4][]4}{[1][17][]18}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Downstream performance (weighted F1 or $R^2$) across significance levels for each dataset (5 seeds per configuration). The narrow interquartile ranges and overlapping boxes confirm that performance differences between methods are small relative to run-to-run variability.}}{19}{figure.4}\protected@file@percent }
+\newlabel{fig:realworld_boxplots}{{4}{19}{Downstream performance (weighted F1 or $R^2$) across significance levels for each dataset (5 seeds per configuration). The narrow interquartile ranges and overlapping boxes confirm that performance differences between methods are small relative to run-to-run variability}{figure.4}{}}
+\newlabel{fig:realworld_boxplots@cref}{{[figure][4][]4}{[1][18][]19}{}{}{}}
+\newlabel{sec:experiments:realworld:pareto}{{4.3}{19}{Pareto Efficiency: Performance vs.\ Cost}{section*.21}{}}
+\newlabel{sec:experiments:realworld:pareto@cref}{{[subsection][3][4]4.3}{[1][19][]19}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Pareto Efficiency: Performance vs.\ Cost}{19}{section*.21}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Pareto efficiency plot: downstream score vs.\ wall-clock time (log scale) for all (dataset, $\alpha $, method) configurations. Each colour represents a dataset; circles are Greedy Boruta, crosses are Vanilla Boruta. Points of the same colour and marker correspond to different $\alpha $ levels. Greedy Boruta consistently occupies the upper-left region (high performance, low cost), Pareto-dominating or matching Vanilla Boruta on every dataset.}}{20}{figure.5}\protected@file@percent }
+\newlabel{fig:pareto}{{5}{20}{Pareto efficiency plot: downstream score vs.\ wall-clock time (log scale) for all (dataset, $\alpha $, method) configurations. Each colour represents a dataset; circles are Greedy Boruta, crosses are Vanilla Boruta. Points of the same colour and marker correspond to different $\alpha $ levels. Greedy Boruta consistently occupies the upper-left region (high performance, low cost), Pareto-dominating or matching Vanilla Boruta on every dataset}{figure.5}{}}
+\newlabel{fig:pareto@cref}{{[figure][5][]5}{[1][19][]20}{}{}{}}
+\newlabel{sec:experiments:realworld:convergence}{{4.3}{20}{Convergence on Real Data}{section*.22}{}}
+\newlabel{sec:experiments:realworld:convergence@cref}{{[subsection][3][4]4.3}{[1][20][]20}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Convergence on Real Data}{20}{section*.22}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Left: Undecidedness factor for Vanilla Boruta on Gisette with $\alpha = \{10^{-1}\}$ as a function of iteration number . Right: Potential miss rate for Vanilla Boruta on Gisette with $\alpha = \{10^{-1}\}$, as a function of iteration number. 10 seeds per panel. The dashed lines marks complete resolution (0\%).}}{21}{figure.6}\protected@file@percent }
+\newlabel{fig:undecidedness_miss_rate_gisette}{{6}{21}{Left: Undecidedness factor for Vanilla Boruta on Gisette with $\alpha = \{10^{-1}\}$ as a function of iteration number . Right: Potential miss rate for Vanilla Boruta on Gisette with $\alpha = \{10^{-1}\}$, as a function of iteration number. 10 seeds per panel. The dashed lines marks complete resolution (0\%)}{figure.6}{}}
+\newlabel{fig:undecidedness_miss_rate_gisette@cref}{{[figure][6][]6}{[1][20][]21}{}{}{}}
+\newlabel{sec:experiments:realworld:summary}{{4.3}{21}{Summary}{section*.23}{}}
+\newlabel{sec:experiments:realworld:summary@cref}{{[subsection][3][4]4.3}{[1][21][]21}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Summary}{21}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{22}{section.5}\protected@file@percent }
+\newlabel{sec:discussion}{{5}{22}{Discussion}{section.5}{}}
+\newlabel{sec:discussion@cref}{{[section][5][]5}{[1][21][]22}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}The FPR--Convergence Trade-off in Practice}{22}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:discussion:tradeoff}{{5.1}{22}{The FPR--Convergence Trade-off in Practice}{subsection.5.1}{}}
+\newlabel{sec:discussion:tradeoff@cref}{{[subsection][1][5]5.1}{[1][21][]22}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Practical Guidance}{22}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:discussion:guidance}{{5.2}{22}{Practical Guidance}{subsection.5.2}{}}
+\newlabel{sec:discussion:guidance@cref}{{[subsection][2][5]5.2}{[1][22][]22}{}{}{}}
+\bibstyle{splncs04}
+\bibcite{kursa2010feature}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Limitations}{23}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:discussion:limitations}{{5.3}{23}{Limitations}{subsection.5.3}{}}
+\newlabel{sec:discussion:limitations@cref}{{[subsection][3][5]5.3}{[1][22][]23}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{23}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{23}{Conclusion}{section.6}{}}
+\newlabel{sec:conclusion@cref}{{[section][6][]6}{[1][23][]23}{}{}{}}
+\citation{kursa2010feature}
+\@writefile{tdo}{\contentsline {todo}{\fcolorbox {black}{yellow!40}{\textcolor {yellow!40}{o}}\ WRITE: Add all necessary references:}{24}{section*.25}\protected@file@percent }
+\pgfsyspdfmark {pgfid4}{20774350}{40695004}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Proofs}{24}{section.1}\protected@file@percent }
+\newlabel{app:proofs}{{A}{24}{Proofs}{section.1}{}}
+\newlabel{app:proofs@cref}{{[section][1][]A}{[1][24][]24}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Proof of Theorem~\ref {thm:recall} (Recall Guarantee)}{24}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case 1: Binomial test confirmation.}{24}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case 2: Rough fix confirmation.}{24}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Conclusion.}{25}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Proof of Theorem~\ref {thm:convergence} (Convergence Guarantee)}{25}{subsection.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Iterations without Bonferroni correction.}{25}{section*.29}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Number of iterations $K = \lceil \log _2(1/\alpha ) \rceil $ required for convergence without Bonferroni correction.}}{25}{table.5}\protected@file@percent }
+\newlabel{tab:iterations_alpha_no_bonf}{{5}{25}{Number of iterations $K = \lceil \log _2(1/\alpha ) \rceil $ required for convergence without Bonferroni correction}{table.5}{}}
+\newlabel{tab:iterations_alpha_no_bonf@cref}{{[table][5][]5}{[1][25][]25}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Proof of Theorem~\ref {thm:fdr_trivial} (FDR Correction Triviality)}{25}{subsection.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Proof of Theorem~\ref {thm:fpr} (FPR of Greedy Boruta)}{26}{subsection.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Comparison with Vanilla Boruta.}{26}{section*.30}\protected@file@percent }
+\gdef \@abspage@last{26}

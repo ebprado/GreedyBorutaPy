@@ -1,0 +1,180 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{tibshirani1996lasso}
+\citation{hoerl1970ridge}
+\citation{guyon2002rfe}
+\citation{peng2005mrmr}
+\citation{rak2019evaluation}
+\citation{mardian2023ovarian}
+\citation{pellet2008markov}
+\@writefile{toc}{\contentsline {title}{Trading statistical conservatism for speed: A `greedy' modification to Boruta}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\authcount {2}}
+\@writefile{toc}{\contentsline {author}{Nicolas Vana \and Estevão Prado}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:introduction}{{1}{1}{Introduction}{section.1}{}}
+\newlabel{sec:introduction@cref}{{[section][1][]1}{[1][1][]1}{}{}{}}
+\citation{kursa2010feature,kursa2010boruta}
+\citation{rak2019evaluation,mardian2023ovarian}
+\citation{pinto2024forecasting,li2024stock}
+\citation{sallah2024fake,tan2024mosquito}
+\citation{borutapy}
+\citation{borutashap}
+\citation{lundberg2017shap}
+\citation{kursa2010feature}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background: The Boruta Algorithm}{3}{section.2}\protected@file@percent }
+\newlabel{sec:background}{{2}{3}{Background: The Boruta Algorithm}{section.2}{}}
+\newlabel{sec:background@cref}{{[section][2][]2}{[1][3][]3}{}{}{}}
+\newlabel{fn:bonf}{{1}{3}{}{Hfootnote.1}{}}
+\newlabel{fn:bonf@cref}{{[footnote][1][]1}{[1][3][]3}{}{}{}}
+\citation{breiman2001random}
+\citation{kursa2010feature}
+\@writefile{toc}{\contentsline {section}{\numberline {3}The Greedy Boruta Algorithm}{4}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{4}{The Greedy Boruta Algorithm}{section.3}{}}
+\newlabel{sec:method@cref}{{[section][3][]3}{[1][4][]4}{}{}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Greedy Boruta Algorithm}}{5}{algorithm.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{alg:greedy_boruta}{{1}{5}{Greedy Boruta Algorithm}{algorithm.1}{}}
+\newlabel{alg:greedy_boruta@cref}{{[algorithm][1][]1}{[1][5][]5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Weak and strong confirmations}{5}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Reducing the Number of Shadow Features}{6}{subsection.3.2}\protected@file@percent }
+\citation{zaharia2016spark}
+\newlabel{eqn:fpr_upper_bound}{{1}{7}{Reducing the Number of Shadow Features}{equation.1}{}}
+\newlabel{eqn:fpr_upper_bound@cref}{{[equation][1][]1}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Theoretical Properties}{8}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:method:theory}{{3.3}{8}{Theoretical Properties}{subsection.3.3}{}}
+\newlabel{sec:method:theory@cref}{{[subsection][3][3]3.3}{[1][8][]8}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Maintained Recall.}{8}{section*.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Per-feature false positive rate (FPR) relative to the minimum FPR across all $\alpha $ at $100\%$ of Greedy Boruta under Bonferroni correction using different number of features, fraction of shadow features and significance level.}}{9}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:relative_fpr_shadows}{{1}{9}{Per-feature false positive rate (FPR) relative to the minimum FPR across all $\alpha $ at $100\%$ of Greedy Boruta under Bonferroni correction using different number of features, fraction of shadow features and significance level}{figure.caption.2}{}}
+\newlabel{fig:relative_fpr_shadows@cref}{{[figure][1][]1}{[1][8][]9}{}{}{}}
+\citation{levy1990stochastic}
+\@writefile{toc}{\contentsline {paragraph}{Guaranteed Convergence.}{10}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Hyperparameter Simplification.}{10}{section*.5}\protected@file@percent }
+\newlabel{sec:method:parallel}{{3.3}{10}{Parallelization}{section*.6}{}}
+\newlabel{sec:method:parallel@cref}{{[subsection][3][3]3.3}{[1][10][]10}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Parallelization.}{10}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Feature Recall Guarantee}{10}{theorem.1.1}\protected@file@percent }
+\newlabel{thm:recall}{{1}{10}{Feature Recall Guarantee}{theorem.1.1}{}}
+\newlabel{thm:recall@cref}{{[theorem][1][1]1}{[1][10][]10}{}{}{}}
+\citation{benjamini1995controlling}
+\citation{benjamini1995controlling}
+\@writefile{toc}{\contentsline {subsubsection}{Convergence Guarantee}{11}{theorem.1.2}\protected@file@percent }
+\newlabel{thm:convergence}{{2}{11}{Convergence Guarantee}{theorem.1.2}{}}
+\newlabel{thm:convergence@cref}{{[theorem][2][1]2}{[1][11][]11}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Number of iterations $K = \lceil \log _2(p/\alpha ) \rceil $ required for convergence when using Bonferroni correction for multiple comparisons.}}{11}{table.caption.9}\protected@file@percent }
+\newlabel{tab:iterations_alpha}{{1}{11}{Number of iterations $K = \lceil \log _2(p/\alpha ) \rceil $ required for convergence when using Bonferroni correction for multiple comparisons}{table.caption.9}{}}
+\newlabel{tab:iterations_alpha@cref}{{[table][1][]1}{[1][11][]11}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Triviality of FDR Correction in Greedy Boruta}{11}{theorem.1.3}\protected@file@percent }
+\newlabel{thm:fdr_trivial}{{3}{11}{Triviality of FDR Correction in Greedy Boruta}{theorem.1.3}{}}
+\newlabel{thm:fdr_trivial@cref}{{[theorem][3][1]3}{[1][11][]11}{}{}{}}
+\citation{strobl2007bias}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Mapping between correction settings across implementations.}}{12}{table.caption.11}\protected@file@percent }
+\newlabel{tab:correction_mapping}{{2}{12}{Mapping between correction settings across implementations}{table.caption.11}{}}
+\newlabel{tab:correction_mapping@cref}{{[table][2][]2}{[1][12][]12}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Multiple Testing Corrections}{12}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:method:corrections}{{3.4}{12}{Multiple Testing Corrections}{subsection.3.4}{}}
+\newlabel{sec:method:corrections@cref}{{[subsection][4][3]3.4}{[1][12][]12}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}False Positive Rate Analysis}{12}{subsection.3.5}\protected@file@percent }
+\newlabel{sec:method:fpr}{{3.5}{12}{False Positive Rate Analysis}{subsection.3.5}{}}
+\newlabel{sec:method:fpr@cref}{{[subsection][5][3]3.5}{[1][12][]12}{}{}{}}
+\newlabel{asm:exchangeability}{{1}{12}{Shadow Exchangeability}{assumption.1}{}}
+\newlabel{asm:exchangeability@cref}{{[assumption][1][]1}{[1][12][]12}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Upper bound on per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction ($K = \lceil \log _2(p/\alpha ) \rceil $). Each cell shows the value obtained with the FPR bound equation.}}{13}{table.caption.12}\protected@file@percent }
+\newlabel{tab:fpr}{{3}{13}{Upper bound on per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction ($K = \lceil \log _2(p/\alpha ) \rceil $). Each cell shows the value obtained with the FPR bound equation}{table.caption.12}{}}
+\newlabel{tab:fpr@cref}{{[table][3][]3}{[1][13][]13}{}{}{}}
+\newlabel{thm:fpr}{{4}{13}{False Positive Rate Analysis}{theorem.1.4}{}}
+\newlabel{thm:fpr@cref}{{[theorem][4][1]4}{[1][13][]13}{}{}{}}
+\newlabel{eq:fpr_exact}{{2}{13}{False Positive Rate Analysis}{equation.2}{}}
+\newlabel{eq:fpr_exact@cref}{{[equation][2][]2}{[1][13][]13}{}{}{}}
+\newlabel{eq:fpr_bound}{{3}{13}{False Positive Rate Analysis}{equation.3}{}}
+\newlabel{eq:fpr_bound@cref}{{[equation][3][]3}{[1][13][]13}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Evaluation}{13}{section.4}\protected@file@percent }
+\newlabel{sec:experiments}{{4}{13}{Experimental Evaluation}{section.4}{}}
+\newlabel{sec:experiments@cref}{{[section][4][]4}{[1][13][]13}{}{}{}}
+\citation{geurts2006extremely,pedregosa2011scikit}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Synthetic Dataset Experiments}{14}{subsection.4.1}\protected@file@percent }
+\newlabel{sec:experiments:setup}{{4.1}{14}{Synthetic Dataset Experiments}{subsection.4.1}{}}
+\newlabel{sec:experiments:setup@cref}{{[subsection][1][4]4.1}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {paragraph}{Parallelism and speedup decomposition.}{14}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Performance Metrics.}{14}{section*.14}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Final-state ground-truth metrics across significance levels ($\alpha $) for Vanilla Boruta and Greedy Boruta on the synthetic dataset. Individual runs are shown as semi-transparent dots; markers with caps show mean $\pm $ SE.}}{15}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:final_state_metrics}{{2}{15}{Final-state ground-truth metrics across significance levels ($\alpha $) for Vanilla Boruta and Greedy Boruta on the synthetic dataset. Individual runs are shown as semi-transparent dots; markers with caps show mean $\pm $ SE}{figure.caption.15}{}}
+\newlabel{fig:final_state_metrics@cref}{{[figure][2][]2}{[1][15][]15}{}{}{}}
+\citation{ke2017lightgbm}
+\citation{guyon2004result}
+\citation{guyon2004result}
+\citation{guyon2004result}
+\citation{guyon2004result}
+\citation{uci2017}
+\citation{buhlmann2014hdi}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Real-World Benchmarks}{16}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:experiments:realworld}{{4.2}{16}{Real-World Benchmarks}{subsection.4.2}{}}
+\newlabel{sec:experiments:realworld@cref}{{[subsection][2][4]4.2}{[1][16][]16}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Real-world benchmark datasets.}}{16}{table.caption.16}\protected@file@percent }
+\newlabel{tab:realworld_datasets}{{4}{16}{Real-world benchmark datasets}{table.caption.16}{}}
+\newlabel{tab:realworld_datasets@cref}{{[table][4][]4}{[1][16][]16}{}{}{}}
+\newlabel{sec:experiments:realworld:performance}{{4.2}{16}{Downstream Performance}{section*.17}{}}
+\newlabel{sec:experiments:realworld:performance@cref}{{[subsection][2][4]4.2}{[1][16][]16}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Downstream Performance}{16}{section*.17}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Real-world benchmark results (mean $\pm $ SE over $R=10$ seeds). \emph  {Score} is test-set F1 (classification) or $R^2$ (regression). \emph  {Sig.}:\ directional one-sided Welch $t$-test at level $0.01$; $\blacktriangleright $~= Vanilla significantly better, $\blacktriangleleft $~= Greedy significantly better, $\approx $~= no significant difference. \emph  {Speedup} = Vanilla time\,/\,Greedy time.}}{17}{table.caption.18}\protected@file@percent }
+\newlabel{tab:realworld_results}{{5}{17}{Real-world benchmark results (mean $\pm $ SE over $R=10$ seeds). \emph {Score} is test-set F1 (classification) or $R^2$ (regression). \emph {Sig.}:\ directional one-sided Welch $t$-test at level $0.01$; $\blacktriangleright $~= Vanilla significantly better, $\blacktriangleleft $~= Greedy significantly better, $\approx $~= no significant difference. \emph {Speedup} = Vanilla time\,/\,Greedy time}{table.caption.18}{}}
+\newlabel{tab:realworld_results@cref}{{[table][5][]5}{[1][16][]17}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Downstream performance (weighted F1 or $R^2$) across significance levels for each dataset (5 seeds per configuration). The narrow interquartile ranges and overlapping boxes confirm that performance differences between methods are small relative to run-to-run variability.}}{18}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:realworld_boxplots}{{3}{18}{Downstream performance (weighted F1 or $R^2$) across significance levels for each dataset (5 seeds per configuration). The narrow interquartile ranges and overlapping boxes confirm that performance differences between methods are small relative to run-to-run variability}{figure.caption.19}{}}
+\newlabel{fig:realworld_boxplots@cref}{{[figure][3][]3}{[1][17][]18}{}{}{}}
+\newlabel{sec:experiments:realworld:pareto}{{4.2}{18}{Pareto Efficiency}{section*.20}{}}
+\newlabel{sec:experiments:realworld:pareto@cref}{{[subsection][2][4]4.2}{[1][18][]18}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Pareto Efficiency}{18}{section*.20}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Pareto efficiency: downstream score vs.\ wall-clock time (log scale). Each colour represents a dataset; circles are Greedy Boruta, crosses are Vanilla Boruta. Different points of the same colour and marker correspond to different $\alpha $ levels.}}{19}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:pareto}{{4}{19}{Pareto efficiency: downstream score vs.\ wall-clock time (log scale). Each colour represents a dataset; circles are Greedy Boruta, crosses are Vanilla Boruta. Different points of the same colour and marker correspond to different $\alpha $ levels}{figure.caption.21}{}}
+\newlabel{fig:pareto@cref}{{[figure][4][]4}{[1][18][]19}{}{}{}}
+\newlabel{sec:experiments:convergence}{{4.2}{19}{Convergence and Early-Stopping Risk}{section*.22}{}}
+\newlabel{sec:experiments:convergence@cref}{{[subsection][2][4]4.2}{[1][18][]19}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Convergence and Early-Stopping Risk}{19}{section*.22}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Undecidedness factor (left) and Potential miss rate (right) for Vanilla Boruta on Gisette with $\alpha = 0.1$ as a function of iteration number. The dashed lines mark complete resolution (0\%).}}{20}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:undecidedness_gisette}{{5}{20}{Undecidedness factor (left) and Potential miss rate (right) for Vanilla Boruta on Gisette with $\alpha = 0.1$ as a function of iteration number. The dashed lines mark complete resolution (0\%)}{figure.caption.23}{}}
+\newlabel{fig:undecidedness_gisette@cref}{{[figure][5][]5}{[1][19][]20}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{20}{section.5}\protected@file@percent }
+\newlabel{sec:discussion}{{5}{20}{Discussion}{section.5}{}}
+\newlabel{sec:discussion@cref}{{[section][5][]5}{[1][20][]20}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}The FPR--Convergence Trade-off in Practice}{20}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:discussion:tradeoff}{{5.1}{20}{The FPR--Convergence Trade-off in Practice}{subsection.5.1}{}}
+\newlabel{sec:discussion:tradeoff@cref}{{[subsection][1][5]5.1}{[1][20][]20}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Limitations}{21}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:discussion:limitations}{{5.2}{21}{Limitations}{subsection.5.2}{}}
+\newlabel{sec:discussion:limitations@cref}{{[subsection][2][5]5.2}{[1][21][]21}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{21}{section.6}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{21}{Conclusion}{section.6}{}}
+\newlabel{sec:conclusion@cref}{{[section][6][]6}{[1][21][]21}{}{}{}}
+\bibstyle{splncs04}
+\bibdata{references}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Proofs}{22}{section.A}\protected@file@percent }
+\newlabel{app:proofs}{{A}{22}{Proofs}{section.A}{}}
+\newlabel{app:proofs@cref}{{[section][1][]A}{[1][22][]22}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Proof of Theorem~\ref {thm:recall} (Recall Guarantee)}{22}{subsection.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Case 1: Binomial test confirmation.}{22}{section*.24}\protected@file@percent }
+\citation{kursa2010feature}
+\citation{levy1990stochastic,blackwell1953equivalent}
+\@writefile{toc}{\contentsline {paragraph}{Case 2: Rough fix confirmation.}{23}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Proof of Theorem~\ref {thm:convergence} (Convergence Guarantee)}{23}{subsection.A.2}\protected@file@percent }
+\citation{mitrinovic1970analytic}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Proof of Theorem~\ref {thm:fdr_trivial} (FDR Correction Triviality)}{24}{subsection.A.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}Proof of Theorem~\ref {thm:fpr} (FPR of Greedy Boruta)}{24}{subsection.A.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Comparison with Vanilla Boruta.}{24}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Additional results}{26}{section.B}\protected@file@percent }
+\newlabel{app:add_results_reducing_shadows}{{B}{26}{Additional results}{section.B}{}}
+\newlabel{app:add_results_reducing_shadows@cref}{{[section][2][]B}{[1][25][]26}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}FPR analysis with $r \leq p$ shadow features}{26}{subsection.B.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Upper bound on per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction using different number of features, fraction of shadow features and significance level.}}{26}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:fpr_shadows}{{6}{26}{Upper bound on per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction using different number of features, fraction of shadow features and significance level}{figure.caption.27}{}}
+\newlabel{fig:fpr_shadows@cref}{{[figure][6][]6}{[1][25][]26}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Upper bound on per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction using different number of features, fraction of shadow features and significance level. The upper bound on FPR is computed as $K/(r+1)$, where $K=\lceil \log _2(p/\alpha )\rceil $.}}{27}{table.caption.28}\protected@file@percent }
+\newlabel{tab:fpr_shadows}{{6}{27}{Upper bound on per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction using different number of features, fraction of shadow features and significance level. The upper bound on FPR is computed as $K/(r+1)$, where $K=\lceil \log _2(p/\alpha )\rceil $}{table.caption.28}{}}
+\newlabel{tab:fpr_shadows@cref}{{[table][6][]6}{[1][26][]27}{}{}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Exact per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction using different numbers of features, fractions of shadow features, and significance levels. The FPR is computed as $1-(1-\frac  {1}{r+1})^K$, where $K=\lceil \log _2(p/\alpha )\rceil $.}}{28}{table.caption.29}\protected@file@percent }
+\newlabel{tab:fpr_shadows_exact}{{7}{28}{Exact per-feature false positive rate (FPR) of Greedy Boruta under Bonferroni correction using different numbers of features, fractions of shadow features, and significance levels. The FPR is computed as $1-(1-\frac {1}{r+1})^K$, where $K=\lceil \log _2(p/\alpha )\rceil $}{table.caption.29}{}}
+\newlabel{tab:fpr_shadows_exact@cref}{{[table][7][]7}{[1][28][]28}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}Reduced-Shadow Greedy Boruta on Real-World Benchmarks}{29}{subsection.B.2}\protected@file@percent }
+\gdef \@abspage@last{29}
